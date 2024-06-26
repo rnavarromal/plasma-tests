@@ -1,3 +1,9 @@
+# Copyright (c) 2024 Roberto E. Navarro <roberto.navarro@udec.cl>
+#                    Departamento de Fisica
+#                    Facultad de Ciencias Fisicas y Matematicas
+#                    Universidad de Concepcion
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 

@@ -1,3 +1,9 @@
+! Copyright (c) 2024 Roberto E. Navarro <roberto.navarro@udec.cl>
+!                    Departamento de Fisica
+!                    Facultad de Ciencias Fisicas y Matematicas
+!                    Universidad de Concepcion
+
+
 module precision_module
   use, intrinsic :: iso_fortran_env, only: dtype => real64
 end module precision_module
@@ -24,6 +30,15 @@ contains
     vnew = vnew + E
   end function boris_method
 
+
+  ! Calculate the cross product between two 3D vectors `a` and `b`.
+  ! Arguments
+  ! ---------
+  !   a, b : dimension(3) vectors
+  !
+  ! Returns
+  ! -------
+  !   dimension(3) vector representing the cross product of `a` and `b`.
   pure function cross_product(a, b) result(cross)
     real(dtype), dimension(3), intent(in) :: a, b
     real(dtype), dimension(3) :: cross
